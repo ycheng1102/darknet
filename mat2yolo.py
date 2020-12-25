@@ -70,7 +70,7 @@ if __name__ == '__main__':
                     height = boxes['height'][i]
                     b = (float(left), float(top), float(width), float(height))
                     bb = convert((w,h), b)
-                    lines.append(str(int(label))+','+str(bb[0])+','+str(bb[1])+','+str(bb[2])+','+str(bb[3]))
+                    lines.append(str(int(label))+' '+str(bb[0])+' '+str(bb[1])+' '+str(bb[2])+' '+str(bb[3]))
                     #lines.append('%s,%s,%s,%s,%s' % (int(label), left, top, width, height))
                 fs.write('\n'.join(lines))
         print('Done!')
