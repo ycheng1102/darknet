@@ -6,8 +6,8 @@ from PIL import Image
 def convert(size, box):
   dw = size[0]
   dh = size[1]
-  x = box[0] + (box[2]/2.0)
-  y = box[1] + (box[3]/2.0)
+  x = box[0] + (box[2] / 2.0)
+  y = box[1] + (box[3] / 2.0)
   w = box[2]
   h = box[3]
   x = x/dw
